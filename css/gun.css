@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+
+
+/*header开始*/
+
+*{
+
+	margin:0;
+
+	padding:0;
+
+}
+
+
+#header {
+
+	width:100%;
+
+	background: #000;
+
+	height:68px;
+
+	position:relative;
+
+
+
+}
+
+#header .container{
+
+
+
+	position: relative;
+
+	width:80%;
+
+	height:34px;
+
+	top:15px;
+
+	bottom:15px;
+
+}
+
+
+
+
+
+#header .img{
+
+	width:23%;
+
+	height:34px;
+
+
+
+}
+
+
+
+#header .img img{
+
+	width:100%;
+
+	height:100%;
+
+}
+
+
+
+#header .clearfix{
+
+	position: fixed;
+
+	top: 10px;
+
+	left:5%;
+
+	width:90%;
+
+	height:34px;
+
+	z-index: 999;
+
+}
+
+
+
+#header .clearfix button{
+	
+
+	display: block;
+
+	float: right;
+
+	background: none;
+
+	border:none;
+
+	cursor:pointer;
+
+	/*button 去除 点击时候产生的蓝色边框*/
+
+	outline:none;
+
+}
+#header .clearfix #nav{
+	position: absolute;
+	width:47%;
+	height:85px;
+	left:120%;
+	top:16px;
+}
+
+#header .clearfix #nav .highlight {
+	border-bottom-color:red;
+}
+
+#header .clearfix #nav a{
+	display: block;
+	padding:10px;
+	float: left;
+	color:#999;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	border-bottom:1px solid rgba(0,0,0,0);
+
+}
+#header .clearfix #nav a:hover{
+	color:#fff;
+	border-bottom-color:red;
+
+}
+
+#header audio{
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:999;
+}
+
+/*header结束*/
+/*内容区开始*/
+.box{
+	width:100%;
+	height:700px;
+	background: #d8d8d8
+}
+
+#slider-box {
+	width: 80%;
+	height: 500px;
+	margin: 0px auto;
+	position: absolute;
+	overflow: hidden; 
+	left:10%;
+	top:270px;
+	/*overflow: scroll;*/
+}
+
+
+/*jq控制鼠标移上，移出效果*/
+.hl{
+	transition:all 0.5s;
+	transform:scale(1.1,1.1);
+	-moz-opacity:0.5;
+	opacity: 0.9;
+	cursor:pointer;
+}
+.hl2{
+	filter:alpha(Opacity=1000);
+	transition:all 0.5s;
+	transform:scale(1,1);
+}
+
+#slider-wrapper {
+	width: 800%;
+}
+
+#slider1 {
+	float: left;
+}
+
+#slider2 {
+	float: left;
+}
+
+
+#team{
+	width:100%;
+	height:80%;
+}
+
+/*右侧4个雪碧图开始*/
+.right{
+	position: absolute;
+	right:0;
+	top:37%;
+}
+
+.right li{
+	width:60px;
+	height:60px;
+	background: #fff;
+	margin-bottom: 3px;
+	list-style: none;
+	z-index: 555;
+	cursor:pointer;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+
+}
+
+.right a{
+
+	display: block;
+	width:60px;
+	height:60px;
+	padding-top: 38px;
+	font-size: 11px;
+	line-height: 1.428571;
+	text-align: center;
+	color:#333;
+	background: url(../images/icons.png) no-repeat;
+
+
+}
+.right .icon1{
+	background-position:6px 11px;
+}
+.right .icon2{
+	background-position:6px -60px;
+}
+.right .icon3{
+	background-position:6px -130px;
+}
+.right .icon4{
+	background-position:6px -206px;
+}
+
+.right li:hover{
+	background: red;
+}
+/*右侧4个雪碧图结束*/
+/*内容区结束*/
+
+/*底部导航开始*/
+.footer {
+	width:100%;
+	height:64px;
+	background: #000;
+	margin-top: 0;
+	position: relative;
+}
+.footer .footer-a{
+	position: absolute;
+	width:87%;
+	height:50%;
+	background: #000;
+	top:25%;
+	left:6.5%;
+}
+
+.footer .footer-a p {
+	color:#7c7c7c;
+	font-size: 12px;
+	background: #000;
+}
+
+.footer .footer-a a{
+	color:#ed1616;
+}
+
+.footer .footer-a a:hover {
+	color:#7c7c7c;
+}
+
+.footer .footer-a .footer-left{
+	width:50%;
+	height:100%;
+	float:left;
+}
+
+.footer .footer-a .footer-right{
+	width:50%;
+	height:100%;
+	float:left;
+}
+
+.footer .footer-a .footer-right li{
+	list-style: none;
+	margin-top: -10px;
+	float:right;
+	padding:15px;
+	background: #000;
+	border-radius:50%;
+}
+
+.footer .footer-a .footer-right li a{
+	display: block;
+	width:20px;
+	height:20px;
+	background: url(../images/social.png) no-repeat;
+}
+
+.footer .footer-a .footer-right .icon1{
+	background-position:-80px 0px;
+}
+.footer .footer-a .footer-right .icon2{
+	background-position:-60px 0px;
+}
+.footer .footer-a .footer-right .icon3{
+	background-position:-40px 0px;
+}
+.footer .footer-a .footer-right .icon4{
+	background-position:-20px 0px;
+}
+.footer .footer-a .footer-right .icon5{
+	background-position:0px 0px;
+}
+
+.footer .footer-a .footer-right li:hover{
+	background:#fff;
+}
+
+/*底部导航结束*/
+
+/* 导航高亮样式 */
+.nav .highlight {
+	color:#999;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	border-bottom:1px solid rgba(0,0,0,0);
+}

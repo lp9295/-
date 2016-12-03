@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+
+
+/*header开始*/
+
+*{
+
+	margin:0;
+
+	padding:0;
+
+}
+
+html,body{
+	background: #000;
+}
+
+#header {
+
+	width:100%;
+
+	background: #000;
+
+	height:68px;
+
+	position:relative;
+
+
+
+}
+
+#header .container{
+
+
+
+	position: relative;
+
+	width:80%;
+
+	height:34px;
+
+	top:15px;
+
+	bottom:15px;
+
+}
+
+
+
+
+
+#header .img{
+
+	width:23%;
+
+	height:34px;
+
+
+
+}
+
+
+
+#header .img img{
+
+	width:100%;
+
+	height:100%;
+
+}
+
+
+
+#header .clearfix{
+
+	position: fixed;
+
+	top: 10px;
+
+	left:5%;
+
+	width:90%;
+
+	height:34px;
+
+	z-index: 999;
+
+}
+
+
+
+#header .clearfix button{
+	
+
+	display: block;
+
+	float: right;
+
+	background: none;
+
+	border:none;
+
+	cursor:pointer;
+
+	/*button 去除 点击时候产生的蓝色边框*/
+
+	outline:none;
+
+}
+#header .clearfix #nav{
+	position: absolute;
+	width:47%;
+	height:85px;
+	left:120%;
+	top:16px;
+}
+
+#header .clearfix #nav .highlight {
+	border-bottom-color:red;
+}
+
+#header .clearfix #nav a{
+	display: block;
+	padding:10px;
+	float: left;
+	color:#999;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	border-bottom:1px solid rgba(0,0,0,0);
+
+}
+#header .clearfix #nav a:hover{
+	color:#fff;
+	border-bottom-color:red;
+
+}
+
+#header audio{
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:999;
+}
+/*header结束*/
+
+/*内容区开始*/
+
+.row #img{
+
+	width:100%;
+
+	height:100%;	
+
+	float: left;
+
+	cursor:pointer
+}
+
+
+.col-lg-3 {
+
+	padding:0!important;
+	border-left: 1px solid #000;
+
+}
+
+
+.col-lg-3 .touming{
+
+	width:100%;
+
+	position: absolute;
+
+	background: rgba(255,0,0,0.1);
+
+	left:-100%;
+
+	cursor:pointer;
+
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+}
+.div1{
+	float:left;
+	overflow: hidden;
+}
+
+.col-lg-3 .touming h2{
+	color:#fff;
+	/*让字体根据视口大小自适应*/
+	font-size: 2vw;
+	text-align: center;
+	margin-top:20%;
+}
+.touming img{
+	margin-left:42%;
+	width:15%;
+	height:22%;
+
+}
+
+.div1:hover .touming{
+	background: rgba(255,0,0,0.6);
+	transform:translatex(100%);
+	-webkit-transform:translatex(100%);
+}
+/*右侧4个雪碧图开始*/
+.right{
+	position: absolute;
+	right:0;
+	top:37%;
+}
+
+.right li{
+	width:60px;
+	height:60px;
+	background: #fff;
+	margin-bottom: 3px;
+	list-style: none;
+	z-index: 555;
+	cursor:pointer;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+
+}
+
+.right a{
+
+	display: block;
+	width:60px;
+	height:60px;
+	padding-top: 38px;
+	font-size: 11px;
+	line-height: 1.428571;
+	text-align: center;
+	color:#333;
+	background: url(../images/icons.png) no-repeat;
+
+
+}
+.right .icon1{
+	background-position:6px 11px;
+}
+.right .icon2{
+	background-position:6px -60px;
+}
+.right .icon3{
+	background-position:6px -130px;
+}
+.right .icon4{
+	background-position:6px -206px;
+}
+
+.right li:hover{
+	background: red;
+}
+/*右侧4个雪碧图结束*/
+/*内容区结束*/
+
+/*底部导航开始*/
+.footer {
+	width:100%;
+	height:64px;
+	background: #000;
+	margin-top: 0;
+	position: relative;
+}
+.footer .footer-a{
+	position: absolute;
+	width:87%;
+	height:50%;
+	background: #000;
+	top:25%;
+	left:6.5%;
+}
+
+.footer .footer-a p {
+	color:#7c7c7c;
+	font-size: 12px;
+	background: #000;
+}
+
+.footer .footer-a a{
+	color:#ed1616;
+}
+
+.footer .footer-a a:hover {
+	color:#7c7c7c;
+}
+
+.footer .footer-a .footer-left{
+	width:50%;
+	height:100%;
+	float:left;
+}
+
+.footer .footer-a .footer-right{
+	width:50%;
+	height:100%;
+	float:left;
+}
+
+.footer .footer-a .footer-right li{
+	list-style: none;
+	margin-top: -10px;
+	float:right;
+	padding:15px;
+	background: #000;
+	border-radius:50%;
+}
+
+.footer .footer-a .footer-right li a{
+	display: block;
+	width:20px;
+	height:20px;
+	background: url(../images/social.png) no-repeat;
+}
+
+.footer .footer-a .footer-right .icon1{
+	background-position:-80px 0px;
+}
+.footer .footer-a .footer-right .icon2{
+	background-position:-60px 0px;
+}
+.footer .footer-a .footer-right .icon3{
+	background-position:-40px 0px;
+}
+.footer .footer-a .footer-right .icon4{
+	background-position:-20px 0px;
+}
+.footer .footer-a .footer-right .icon5{
+	background-position:0px 0px;
+}
+
+.footer .footer-a .footer-right li:hover{
+	background:#fff;
+}
+
+
+/*底部导航结束*/
+
+/* 导航高亮样式 */
+.nav .highlight {
+	color:#999;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	border-bottom:1px solid rgba(0,0,0,0);
+}

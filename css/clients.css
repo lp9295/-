@@ -1,0 +1,698 @@
+header开始*/
+
+*{
+
+	margin:0;
+
+	padding:0;
+
+}
+
+html,body{
+	background: #000;
+}
+
+#header {
+
+	width:100%;
+
+	background: #000;
+
+	height:68px;
+
+	position:relative;
+
+}
+
+#header .container{
+
+	position: relative;
+
+	width:80%;
+
+	height:34px;
+
+	top:15px;
+
+	bottom:15px;
+
+}
+
+
+#header .img{
+
+	width:23%;
+
+	height:34px;
+
+}
+
+#header .img img{
+
+	width:100%;
+
+	height:100%;
+
+}
+
+#header .fix{
+
+	position: fixed;
+
+	top: 10px;
+
+	left:5%;
+
+	width:90%;
+
+	height:34px;
+
+	z-index: 999;
+}
+
+#header .fix button{
+	
+
+	display: block;
+
+	float: right;
+
+	background: none;
+
+	border:none;
+
+	cursor:pointer;
+
+	/*button 去除 点击时候产生的蓝色边框*/
+
+	outline:none;
+
+}
+#header .fix #div-nav{
+	position: absolute;
+	width:47%;
+	height:85px;
+	left:120%;
+	top:16px;
+}
+
+#header .fix #div-nav .highlight {
+	border-bottom-color:red;
+}
+
+#header .fix #div-nav a{
+	display: block;
+	padding:10px;
+	float: left;
+	color:#999;
+	font-size: 16px;
+	border-bottom:1px solid rgba(0,0,0,0);
+
+}
+#header .fix #div-nav a:hover{
+	color:#fff;
+	border-bottom-color:red;
+
+}
+
+#header audio{
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:999;
+}
+
+/*header结束*/
+/*内容区开始*/
+
+.client-grid {
+  	float: left;
+  	width: 33.3%;
+  	border-bottom:1px solid #000000;
+  	border-left:1px solid #000000;
+ 	position:relative;
+ 	background: #000;
+}
+.client-grid a{
+	display:block;
+}
+.client-grid img{
+	width:100%;
+	opacity: 0.5;
+}
+.desc{
+	position:absolute;
+	right:0%;
+	top:0%;
+	width:45%;
+	height:100%;
+	background: rgba(255, 255, 255, 0.72);
+}
+.desc-img.a {
+  	left: 45%;
+}
+
+.desc h3 a{
+	color:#000000;
+}
+
+.client-grid:hover div.desc h3 a{
+	color:#ed1616;
+}
+
+.client-grid a img {
+  	background: #000;
+}
+
+.client-grid a img:hover{
+  	opacity: 1.0;
+}
+
+.desc-img{
+	position:absolute;
+	top: 38%;
+	left: 51.2%;
+}
+
+.desc h3{
+	margin: 17px 0 0 0;
+	color:#000000;
+	font-size:42px;
+	text-align: center;
+	font-weight:300;
+}
+
+.desc h4{
+	margin: 5px 0 10px 0;
+	color:#000000;
+	text-align: center;
+	font-size:20px;
+	font-weight:400;
+}
+
+.desc p a{
+	color:#fff994;
+	padding: 5px 0;
+}
+
+.client-grid:hover div.desc p a{
+	color:#ffffff;
+	background:#ed1616;
+}
+
+.desc p{
+	margin:0px auto;
+	color:#fff994;
+	background:#000000;
+	width:54%;
+	text-align: center;
+	font-size:12px;
+}
+
+.slide-bar.a {
+	top: 34%;
+}
+
+.desc.left {
+	left: 0% !important;
+}
+
+.desc p:nth-child(5) {
+	 color: #000000;
+	 margin:0;
+	 padding: 14px 0;
+	 background: #ffffff;
+	 font-size:20px;
+	 width: 100%;
+	 font-weight:400;
+}
+
+.client-grid ul{
+	margin: 11px 0;
+	padding: 0;
+	text-align: center;
+	}
+
+
+.client-grid ul li{
+	display:inline-block;
+	list-style-type:none;
+	margin: 0 8px;
+	}
+
+
+.client-grid ul li a.twit{
+	background: url(../images/fb.png) no-repeat -38px 0px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	}
+
+.client-grid ul li a.twit:hover{
+	background: url(../images/fbhover.png) no-repeat -38px 0px;
+	}
+
+.client-grid ul li a.fb{
+	background: url(../images/fb.png) no-repeat 0px 0px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	}
+
+
+.client-grid ul li a.fb:hover{
+	background: url(../images/fbhover.png) no-repeat 0px 0px;
+	}
+
+
+.client-grid ul li a.goog{
+	background: url(../images/fb.png) no-repeat -78px 0px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	}
+
+
+.client-grid ul li a.goog:hover{
+	background: url(../images/fbhover.png) no-repeat -78px 0px;
+	}
+
+
+@media(max-width:1440px){
+
+	.desc h3 {
+	  font-size: 30px;
+	  margin: 10px 0 0 0;
+	  }
+
+	.desc h4 {
+	  font-size: 16px;
+	  margin: 12px 0 13px 0;
+	  }
+
+	.desc p:nth-child(5) {
+	  padding: 10px 0;
+	  }
+
+	.desc-img {
+	  left: 50.8%;
+	  }
+	
+	.client-grid img:nth-child(2){
+	height:240px;
+	}
+}
+@media(max-width:1366px){
+	
+	.header-nav {
+	  padding: 17px 0 16px 0;
+	}
+	
+	.desc h4 {
+	  font-size: 15px;
+	}
+
+	.desc p:nth-child(5) {
+	  padding: 7px 0;
+	}
+
+	.client-grid ul li {
+	  margin: 0 5px;
+	}
+
+	.desc h3 {
+	  font-size: 28px;
+	  }
+	
+}
+@media(max-width:1280px){
+	
+	.header-nav {
+	  padding: 15px 0 14px 0;
+	}
+
+	.desc h3 {
+	  font-size: 26px;
+	}
+
+	.desc h4 {
+	  font-size: 14px;
+	}
+
+	.client-grid ul {
+	  margin: 9px 0 5px 0;
+	}
+
+	.desc p {
+	  width: 62%;
+	}
+
+	.desc p:nth-child(5) {
+	  padding: 6px 0;
+	}
+
+	.desc p:nth-child(5) {
+	  font-size: 18px;
+	  padding: 7px 0;
+	}
+
+	.client-grid ul li {
+	  margin: 0 4px;
+	}
+
+	.desc-img {
+	  left: 50%;
+	}
+	
+}
+
+@media(max-width:1024px){
+	.client-grid a img {
+	  height: 189px;
+	}
+
+	.desc {
+	  width: 50%;
+	}
+
+	.desc p {
+	  width: 78%;
+	}
+
+	.desc h3 {
+	  margin: 15px 0 0 0;
+	}
+
+	.desc p a {
+	  padding: 3px 0;
+	}
+
+	.client-grid ul {
+	  margin: 5px 0 1px 0;
+	}
+
+	.desc h4 {
+	  margin: 4px 0 10px 0px;
+	}
+
+	.desc p:nth-child(5) {
+	  padding: 14px 0;
+	}
+
+	.desc-img {
+	  left: 43.8%;
+	}
+
+	.desc-img.a {
+	  left: 50%;
+	}
+}
+
+
+@media(max-width:768px){
+
+	.header-nav {
+	  padding: 23px 0px;
+	}
+
+	.slide-bar.a {
+	  top: 36%;
+	}
+
+	.slide-bar.a.two {
+	  top: 31%;
+	}
+
+	.client-grid {
+	  width: 100%;
+	}
+
+	.client-grid:nth-child(3), .client-grid:nth-child(5), .client-grid:nth-child(9) {
+	  display: none;
+	}
+
+	.desc-img.a {
+  		left: 42%;
+	}
+
+	.desc-img {
+  		left: 55.2%;
+	}
+
+	.desc h3 {
+ 		 margin: 35px 0 0 0;
+	}
+
+	.desc p:nth-child(5) {
+	  	font-size: 16px;
+	}
+
+	.desc h4 {
+	 	 margin: 17px 0 17px 0px;
+	}
+
+	.desc p {
+	  	width: 66%;
+	}
+
+	.desc p a {
+	  	padding: 12px 0;
+	}
+
+	.client-grid ul {
+ 		margin: 16px 0 16px 0;
+	}
+
+	.desc p:nth-child(5) {
+  		padding: 19px 0;
+	}
+
+	.client-grid a img {
+	  height: 281px;
+	}
+
+	.desc {
+	  width: 42%;
+	}
+}
+
+
+@media(max-width:640px){
+
+	.desc h4 {
+	  font-size: 13px;
+	}	
+
+	.client-grid a img {
+	  height: 279px;
+	}
+
+	.desc-img {
+  		left: 54.8%;
+	}
+
+}
+
+
+@media(max-width:480px){
+
+	.client-grid {
+	  width: 100%;
+	}
+
+	.desc-img {
+	  left: 53.5%;
+	}
+
+	.desc p:nth-child(5) {
+	  display: block;
+	}
+
+
+	.desc h3 {
+	  margin: 35px 0 0 0;
+	}
+
+	.desc p:nth-child(5) {
+	 display:none;
+	}
+
+	.desc p a {
+	  padding: 9px 0;
+	}
+
+	.client-grid a img {
+	  height: initial !important;
+	}
+}
+
+
+@media(max-width:320px){
+
+	.desc p:nth-child(5) {
+	  display: none;
+	}
+
+	.desc h3 {
+	  font-size: 20px;
+	  margin: 9px 0 0 0;
+	}
+
+	.desc-img {
+	  left: 41%;
+	}
+
+	.desc-img.a {
+	  left: 52%;
+	}
+
+	.desc p {
+	  width: 74%;
+	}
+
+	.desc p a {
+	  padding: 4px 0;
+	}
+
+	.desc h4 {
+	  margin: 7px 0 7px 0px;
+	}
+
+	.desc {
+  		width: 52%;
+	}
+}
+
+.right{
+	position: absolute;
+	right:0;
+	top:37%;
+}
+
+.right li{
+	width:60px;
+	height:60px;
+	background: #fff;
+	margin-bottom: 3px;
+	list-style: none;
+	z-index: 555;
+	cursor:pointer;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+
+}
+
+.right a{
+
+	display: block;
+	width:60px;
+	height:60px;
+	padding-top: 38px;
+	font-size: 11px;
+	line-height: 1.428571;
+	text-align: center;
+	color:#333;
+	background: url(../images/icons.png) no-repeat;
+
+
+}
+.right .icon1{
+	background-position:6px 11px;
+}
+.right .icon2{
+	background-position:6px -60px;
+}
+.right .icon3{
+	background-position:6px -130px;
+}
+.right .icon4{
+	background-position:6px -206px;
+}
+
+.right li:hover{
+	background: red;
+}
+/*右侧4个雪碧图结束*/
+/*内容区结束*/
+
+/*底部导航开始*/
+.footer {
+	width:100%;
+	height:64px;
+	background: #000;
+	margin-top: 0;
+	position: relative;
+}
+.footer .footer-a{
+	position: absolute;
+	width:87%;
+	height:50%;
+	background: #000;
+	top:25%;
+	left:6.5%;
+}
+
+.footer .footer-a p {
+	color:#7c7c7c;
+	font-size: 12px;
+	background: #000;
+}
+
+.footer .footer-a a{
+	color:#ed1616;
+}
+
+.footer .footer-a a:hover {
+	color:#7c7c7c;
+}
+
+.footer .footer-a .footer-left{
+	width:50%;
+	height:100%;
+	float:left;
+}
+
+.footer .footer-a .footer-right{
+	width:50%;
+	height:100%;
+	float:left;
+}
+
+.footer .footer-a .footer-right li{
+	list-style: none;
+	margin-top: -10px;
+	float:right;
+	padding:15px;
+	background: #000;
+	border-radius:50%;
+}
+
+.footer .footer-a .footer-right li a{
+	display: block;
+	width:20px;
+	height:20px;
+	background: url(../images/social.png) no-repeat;
+}
+
+.footer .footer-a .footer-right .icon1{
+	background-position:-80px 0px;
+}
+.footer .footer-a .footer-right .icon2{
+	background-position:-60px 0px;
+}
+.footer .footer-a .footer-right .icon3{
+	background-position:-40px 0px;
+}
+.footer .footer-a .footer-right .icon4{
+	background-position:-20px 0px;
+}
+.footer .footer-a .footer-right .icon5{
+	background-position:0px 0px;
+}
+
+.footer .footer-a .footer-right li:hover{
+	background:#fff;
+}
+
+
+/*底部导航结束*/
