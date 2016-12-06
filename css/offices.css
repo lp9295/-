@@ -169,12 +169,18 @@
 	text-align: center;
 	color: #ffffff;
 }
-#offices .offices-img:hover .offices-yy{
-	background: none;
+#offices .offices-img .offices-yy:hover{
+	background:none;
 }
-#offices .offices-img:hover a{
+#offices .offices-img:hover>a{
 	background: red;
 }
+/*#offices .offices-img a:hover{
+	background: red;
+}*/
+/*#offices .offices-img~a:hover{
+	background: red;
+}*/
 
 #offices a:hover{
 	background: red;
